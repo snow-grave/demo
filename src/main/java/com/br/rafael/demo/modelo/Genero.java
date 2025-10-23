@@ -1,4 +1,4 @@
-package com.br.rafael.modelo;
+package com.br.rafael.demo.modelo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

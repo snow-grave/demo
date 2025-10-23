@@ -1,6 +1,6 @@
-package com.br.rafael.modelo;
+package com.br.rafael.demo.modelo;
 
-import com.br.rafael.modelo.enums.TipoObra;
+import com.br.rafael.demo.modelo.enums.TipoObra;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

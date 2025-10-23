@@ -1,4 +1,4 @@
-package com.br.rafael.modelo.enums;
+package com.br.rafael.demo.modelo.enums;
 
 public enum TipoObra {
     FILME,
