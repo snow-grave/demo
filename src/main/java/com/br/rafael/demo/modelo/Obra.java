@@ -1,7 +1,6 @@
 package com.br.rafael.demo.modelo;
 
 import com.br.rafael.demo.modelo.enums.TipoObra;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -17,7 +16,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="obra")
+@Table(name = "obra")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,11 +28,13 @@ public class Obra {
     private String titulo;
     private String descricao;
     private Integer anoLancamento;
-    private String imagemUrl;//link de uma imagem ja hospedada num site
+    private String imagemUrl;
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, length = 20)
     private TipoObra tipo;
+
     @ManyToOne
-    @JoinColumn(name = "avaliacao_id", referencedColumnName = "id")
-    private Avaliacao avaliacao;
+    @JoinColumn(name = "genero_id", referencedColumnName = "id")
+    private Genero genero;
+
 }
